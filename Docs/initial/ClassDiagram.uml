@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="56.075757575757564" y="589.0454545454545">netscape</node>
+    <node x="770.5757575757575" y="848.8939393939393">data</node>
+    <node x="900.5606060606059" y="363.66666666666663">META-INF</node>
+    <node x="601.4393939393939" y="432.60606060606057">javafx</node>
+    <node x="1049.8333333333335" y="509.5">org</node>
+    <node x="292.5151515151515" y="13.666666666666664">images</node>
+    <node x="341.530303030303" y="453.8181818181818">impl</node>
+    <node x="881.060606060606" y="151.54545454545453">groovyjarjarasm</node>
+    <node x="69.07575757575756" y="724.2727272727273">javax</node>
+    <node x="705.2878787878788" y="13.666666666666664">fxml</node>
+    <node x="389.74242424242425" y="623.5151515151515">toolbarButtonGraphics</node>
+    <node x="104.6212121212121" y="241.6969696969697">groovyjarjarpicocli</node>
+    <node x="420.53030303030295" y="740.1818181818181">groovy</node>
+    <node x="31.075757575757564" y="453.8181818181818">groovyjarjarantlr</node>
+    <node x="319.5151515151515" y="113.09848484848484">jdk</node>
+    <node x="809.6969696969696" y="655.3333333333333">java</node>
+    <node x="919.560606060606" y="13.666666666666664">com</node>
+    <node x="4.000000000000007" y="151.54545454545453">sun</node>
+    <node x="601.4393939393939" y="241.6969696969697">pizzashop</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="0.37714285714285717" showDependencies="false" x="661.0530303030303" y="523.9848484848484" />
+  <SelectedNodes>
+    <node>com</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
