@@ -17,8 +17,6 @@ public class OrdersGUI {
         return tableNumber;
     }
     public void setTableNumber(int tableNumber) { this.tableNumber = tableNumber; }
-    private PizzaService service;
-
     public void displayOrdersForm(PizzaService service){
      VBox vBoxOrders = null;
         try {
