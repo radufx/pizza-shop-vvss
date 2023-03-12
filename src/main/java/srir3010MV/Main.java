@@ -40,8 +40,8 @@ public class Main extends Application {
                 Optional<ButtonType> result = exitAlert.showAndWait();
                 if (result.get() == ButtonType.YES){
                     //Stage stage = (Stage) this.getScene().getWindow();
-                    logger.log(System.Logger.Level.INFO, "Incasari cash: "+service.getTotalAmount(PaymentType.Cash));
-                    logger.log(System.Logger.Level.INFO, "Incasari card: "+service.getTotalAmount(PaymentType.Card));
+                    logger.log(System.Logger.Level.INFO, "Incasari cash: "+service.getTotalAmountForType(PaymentType.Cash));
+                    logger.log(System.Logger.Level.INFO, "Incasari card: "+service.getTotalAmountForType(PaymentType.Card));
 
                     primaryStage.close();
                 }

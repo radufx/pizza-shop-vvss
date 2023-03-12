@@ -26,7 +26,9 @@ public class PaymentRepository {
             String line = null;
             while((line=br.readLine())!=null){
                 Payment payment=getPayment(line);
-                paymentList.add(payment);
+                if (payment != null) {
+                    paymentList.add(payment);
+                }
             }
             br.close();
         } catch (FileNotFoundException e) {
