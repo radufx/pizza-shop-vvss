@@ -17,9 +17,8 @@ import srir3010MV.repository.PaymentRepository;
 import srir3010MV.service.PizzaService;
 
 import java.util.Optional;
-
 public class Main extends Application {
-
+    private static final System.Logger logger = System.getLogger(Main.class.getName());
     @Override
     public void start(Stage primaryStage) throws Exception{
 
@@ -28,7 +27,6 @@ public class Main extends Application {
         PizzaService service = new PizzaService(repoMenu, payRepo);
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/mainFXML.fxml"));
-        //VBox box = loader.load();
         Parent box = loader.load();
         MainGUIController ctrl = loader.getController();
         ctrl.setService(service);
@@ -42,8 +40,8 @@ public class Main extends Application {
                 Optional<ButtonType> result = exitAlert.showAndWait();
                 if (result.get() == ButtonType.YES){
                     //Stage stage = (Stage) this.getScene().getWindow();
-                    System.out.println("Incasari cash: "+service.getTotalAmount(PaymentType.Cash));
-                    System.out.println("Incasari card: "+service.getTotalAmount(PaymentType.Card));
+                    logger.log(System.Logger.Level.INFO, "Incasari cash: "+service.getTotalAmount(PaymentType.Cash));
+                    logger.log(System.Logger.Level.INFO, "Incasari card: "+service.getTotalAmount(PaymentType.Card));
 
                     primaryStage.close();
                 }

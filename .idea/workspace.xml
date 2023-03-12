@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29ee2396-605a-44fe-bce6-8802f954fad2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/initial/ClassDiagram.uml" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/initial/ClassDiagram.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/payments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/payments.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/srir3010MV/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/srir3010MV/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/srir3010MV/repository/MenuRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/srir3010MV/repository/MenuRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/srir3010MV/service/PaymentAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/srir3010MV/service/PaymentAlert.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +41,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Projects/Semestrul 6/VVSS/pizza-shop-vvss",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "sonarlint"
   }
 }]]></component>
   <component name="RunManager">
@@ -84,6 +89,12 @@
       <workItem from="1677917037991" duration="641000" />
       <workItem from="1677917697538" duration="388000" />
       <workItem from="1677918105794" duration="2618000" />
+      <workItem from="1677921565276" duration="1472000" />
+      <workItem from="1678085868940" duration="4225000" />
+      <workItem from="1678092744302" duration="2433000" />
+      <workItem from="1678529932625" duration="2954000" />
+      <workItem from="1678620754558" duration="662000" />
+      <workItem from="1678621459676" duration="3528000" />
     </task>
     <servers />
   </component>
@@ -100,5 +111,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/srir3010MV/service/PaymentAlert.java</url>
+          <line>11</line>
+          <properties class="srir3010MV.service.PaymentAlert" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

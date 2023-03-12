@@ -11,13 +11,11 @@ public class MenuRepository {
     private static String filename = "data/menu.txt";
     private List<MenuDataModel> listMenu;
 
-    public MenuRepository(){
-    }
 
     private void readMenu(){
         //ClassLoader classLoader = MenuRepository.class.getClassLoader();
         File file = new File(filename);
-        this.listMenu= new ArrayList();
+        this.listMenu= new ArrayList<>();
         BufferedReader br = null;
         try {
             br = new BufferedReader(new FileReader(file));
@@ -27,8 +25,6 @@ public class MenuRepository {
                 listMenu.add(menuItem);
             }
             br.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

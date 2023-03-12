@@ -13,21 +13,21 @@ public class PaymentAlert implements PaymentOperation {
         this.service=service;
     }
 
-    @Override
+    // @Override
     public void cardPayment() {
         System.out.println("--------------------------");
         System.out.println("Paying by card...");
         System.out.println("Please insert your card!");
         System.out.println("--------------------------");
     }
-    @Override
+    // @Override
     public void cashPayment() {
         System.out.println("--------------------------");
         System.out.println("Paying cash...");
         System.out.println("Please show the cash...!");
         System.out.println("--------------------------");
     }
-    @Override
+    // @Override
     public void cancelPayment() {
         System.out.println("--------------------------");
         System.out.println("Payment choice needed...");
