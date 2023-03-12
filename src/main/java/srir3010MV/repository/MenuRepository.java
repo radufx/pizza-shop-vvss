@@ -22,7 +22,9 @@ public class MenuRepository {
             String line = null;
             while((line=br.readLine())!=null){
                 MenuDataModel menuItem=getMenuItem(line);
-                listMenu.add(menuItem);
+                if (menuItem != null) {
+                    listMenu.add(menuItem);
+                }
             }
             br.close();
         } catch (IOException e) {
