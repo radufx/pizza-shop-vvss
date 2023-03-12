@@ -1,12 +1,13 @@
-package srir3010MV.service;
+package srir3010MV.utils;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import srir3010MV.model.PaymentType;
+import srir3010MV.service.PizzaService;
 
 import java.util.Optional;
 
-public class PaymentAlert implements PaymentOperation {
+public class PaymentAlert {
     private PizzaService service;
 
     public PaymentAlert(PizzaService service){
