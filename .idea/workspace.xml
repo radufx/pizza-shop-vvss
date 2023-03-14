@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29ee2396-605a-44fe-bce6-8802f954fad2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Docs/v1.1/ClassDiagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/v1.1/ClassDiagramDep.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c90fd766d89c2ab2c1f3abf3bab9cfea6f1ab91" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19f92eca00e4e3415db72afcff93ae9c7eaece87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/504fa2256bf4adff2a70958433046659c37b4397" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58960bacfd4de0de52cbb98c2228c46413228419" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0c90fd766d89c2ab2c1f3abf3bab9cfea6f1ab91" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/9/19f92eca00e4e3415db72afcff93ae9c7eaece87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/0/504fa2256bf4adff2a70958433046659c37b4397" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/58960bacfd4de0de52cbb98c2228c46413228419" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +107,7 @@
       <workItem from="1678620754558" duration="662000" />
       <workItem from="1678621459676" duration="3528000" />
       <workItem from="1678739868132" duration="1013000" />
+      <workItem from="1678784456408" duration="69000" />
     </task>
     <servers />
   </component>
