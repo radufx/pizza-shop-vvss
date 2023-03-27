@@ -10,7 +10,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import srir3010MV.model.MenuDataModel;
 import srir3010MV.gui.OrdersGUI;
-import srir3010MV.service.PaymentAlert;
+//import srir3010MV.service.PaymentAlert;
 import srir3010MV.service.PizzaService;
 
 import java.util.Calendar;
@@ -103,8 +103,8 @@ public class OrdersGUIController {
             System.out.println("Table: " + tableNumber);
             System.out.println("Total: " + getTotalAmount());
             System.out.println("--------------------------");
-            PaymentAlert pay = new PaymentAlert(service);
-            pay.showPaymentAlert(tableNumber, this.getTotalAmount());
+//            PaymentAlert pay = new PaymentAlert(service);
+//            pay.showPaymentAlert(tableNumber, this.getTotalAmount());
         });
     }
 

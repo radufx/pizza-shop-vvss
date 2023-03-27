@@ -22,8 +22,12 @@ public class PizzaService {
 
     public List<Payment> getPayments(){return payRepo.getAll(); }
 
-    public void addPayment(int table, PaymentType type, double amount){
+    public void addPayment(int table, PaymentType type, double amount) throws Exception {
         Payment payment= new Payment(table, type, amount);
+
+        if (table < 1 || table > 8) throw new Exception("Table must be between 1 and 8");
+        if (amount <= 0.0) throw new Exception("Amount must be > 0");
+
         payRepo.add(payment);
     }
 
