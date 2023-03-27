@@ -89,8 +89,6 @@ class PizzaServiceTest {
         paymentType = PaymentType.Cash;
         amount = -1.0;
 
-        int initialSize = paymentRepository.getAll().size();
-        tryAddPayment(table, paymentType, amount);
         assertThrows(Exception.class, () -> pizzaService.addPayment(table, paymentType, amount), "Expected to throw, but it didn't");
     }
 

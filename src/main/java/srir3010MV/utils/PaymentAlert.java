@@ -46,10 +46,18 @@ public class PaymentAlert {
         Optional<ButtonType> result = paymentAlert.showAndWait();
         if (result.get() == cardPayment) {
             cardPayment();
-            service.addPayment(tableNumber, PaymentType.Card,totalAmount);
+            try {
+                service.addPayment(tableNumber, PaymentType.Card,totalAmount);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         } else if (result.get() == cashPayment) {
             cashPayment();
-            service.addPayment(tableNumber, PaymentType.Cash,totalAmount);
+            try {
+                service.addPayment(tableNumber, PaymentType.Cash,totalAmount);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         } else if (result.get() == cancel) {
              cancelPayment();
         } else {
