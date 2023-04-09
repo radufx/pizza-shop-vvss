@@ -47,9 +47,9 @@ class PizzaServiceTestWBT {
         paymentType = PaymentType.Cash;
 
         tryAddPayment(1, paymentType, 5.0);
-        tryAddPayment(2, paymentType, -4.0);
-        tryAddPayment(1, paymentType, -1.0);
-        assertEquals(5.0, pizzaService.getTotalAmountForType(PaymentType.Cash));
+        tryAddPayment(2, paymentType, 4.0);
+        tryAddPayment(1, paymentType, 2.0);
+        assertEquals(11.0, pizzaService.getTotalAmountForType(PaymentType.Cash));
     }
 
     @Test
@@ -72,7 +72,7 @@ class PizzaServiceTestWBT {
 
         tryAddPayment(1, paymentType, 5.0);
         tryAddPayment(2, paymentType, -4.0);
-        tryAddPayment(1, paymentType, -2.0);
+        tryAddPayment(1, paymentType, -1.0);
         assertEquals(5.0, pizzaService.getTotalAmountForType(PaymentType.Cash));
     }
 
