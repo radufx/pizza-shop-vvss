@@ -9,8 +9,14 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class PaymentRepository {
-    private static String filename = "data/payments.txt";
+    private String filename = "data/payments.txt";
     private List<Payment> paymentList;
+
+    public PaymentRepository(String filename){
+        this.filename = filename;
+        this.paymentList = new ArrayList<>();
+        readPayments();
+    }
 
     public PaymentRepository(){
         this.paymentList = new ArrayList<>();
@@ -76,4 +82,16 @@ public class PaymentRepository {
         }
     }
 
+    public void clearAll() {
+        File file = new File(filename);
+
+        PrintWriter writer = null;
+        try {
+            writer = new PrintWriter(file);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        writer.print("");
+        writer.close();
+    }
 }
