@@ -42,8 +42,8 @@ class PizzaServiceTestWBT {
 
     @Test
     @Tag("get-total-amount")
-    @DisplayName("get-total-amount-tc-9")
-    void getTotalAmountTC9() {
+    @DisplayName("get-total-amount-tc-3")
+    void getTotalAmountTC3() {
         paymentType = PaymentType.Cash;
 
         tryAddPayment(1, paymentType, 5.0);
@@ -54,8 +54,8 @@ class PizzaServiceTestWBT {
 
     @Test
     @Tag("get-total-amount")
-    @DisplayName("get-total-amount-tc-3")
-    void getTotalAmountTC3() {
+    @DisplayName("get-total-amount-tc-5")
+    void getTotalAmountTC5() {
         paymentType = PaymentType.Card;
 
         tryAddPayment(1, paymentType, 5.0);
@@ -66,14 +66,14 @@ class PizzaServiceTestWBT {
 
     @Test
     @Tag("get-total-amount")
-    @DisplayName("get-total-amount-tc-8")
-    void getTotalAmountTC8() {
+    @DisplayName("get-total-amount-tc-4")
+    void getTotalAmountTC4() {
         paymentType = PaymentType.Cash;
 
-        tryAddPayment(1, paymentType, 5.0);
+        tryAddPayment(1, paymentType, -5.0);
         tryAddPayment(2, paymentType, -4.0);
         tryAddPayment(1, paymentType, -1.0);
-        assertEquals(5.0, pizzaService.getTotalAmountForType(PaymentType.Cash));
+        assertEquals(0.0, pizzaService.getTotalAmountForType(PaymentType.Cash));
     }
 
     private void tryAddPayment(int table, PaymentType paymentType, double amount){
