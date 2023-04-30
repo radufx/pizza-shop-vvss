@@ -3,6 +3,7 @@ package srir3010MV.unitTesting;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.mockito.Spy;
 import srir3010MV.model.Payment;
 import srir3010MV.model.PaymentType;
 import srir3010MV.repository.MenuRepository;
@@ -13,64 +14,46 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
-import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.*;
 
-class MockitoPaymentRepositoryTest {
+class MockitoPaymentTest {
 
-    private PaymentRepository paymentRepository;
-    private PizzaService pizzaService;
+    private Payment payment;
+
 
     @BeforeEach
     void setUp() {
-        final MenuRepository menuRepository = new MenuRepository();
-        paymentRepository = mock(PaymentRepository.class);
-        pizzaService = new PizzaService(menuRepository, paymentRepository);
+        payment = new Payment(5, PaymentType.Cash, 100.0);
     }
 
     @Test
-    void addPayment() {
-        int table = 2;
-        PaymentType paymentType = PaymentType.Cash;
-        double amount = 100.0;
+    void PaymentType() {
+        Payment spyPayment = spy(payment);
 
-        Payment payment1 = new Payment(table, paymentType, amount);
+        verify(spyPayment, times(0)).getType();
 
-        Mockito.when(paymentRepository.getAll()).thenReturn(List.of(payment1));
+        assertEquals(PaymentType.Cash, spyPayment.getType());
+        doReturn(PaymentType.Card).when(spyPayment).getType();
+        assertEquals(PaymentType.Card, spyPayment.getType());
 
-        int initialSize = paymentRepository.getAll().size();
-        try {
-            pizzaService.addPayment(table, paymentType, amount);
-        } catch (Exception e){
-            fail(e.getMessage());
-        }
-
-        Mockito.when(paymentRepository.getAll()).thenReturn(List.of(payment1, payment1));
-
-        assertEquals(initialSize + 1, paymentRepository.getAll().size());
+        verify(spyPayment, times(2)).getType();
     }
 
     @Test
-    void getTotalAmount() {
-        PaymentType paymentType = PaymentType.Cash;
+    void Amount() {
+        Payment spyPayment = spy(payment);
 
-        tryAddPayment(1, paymentType, 5.0);
-        tryAddPayment(2, paymentType, 4.0);
-        tryAddPayment(1, paymentType, 2.0);
+        verify(spyPayment, times(0)).getAmount();
+        verify(spyPayment, times(0)).setAmount(anyDouble());
 
-        Payment payment1 = new Payment(1, paymentType, 5.0);
-        Payment payment2 = new Payment(2, paymentType, 4.0);
-        Payment payment3 = new Payment(1, paymentType, 2.0);
+        assertEquals(100.0, spyPayment.getAmount());
+        spyPayment.setAmount(75.0);
+        assertEquals(75.0, spyPayment.getAmount());
+        doReturn(50.0).when(spyPayment).getAmount();
+        assertEquals(50.0, spyPayment.getAmount());
 
-        Mockito.when(paymentRepository.getAll()).thenReturn(List.of(payment1, payment2, payment3));
 
-        assertEquals(11.0, pizzaService.getTotalAmountForType(PaymentType.Cash));
-    }
-
-    private void tryAddPayment(int table, PaymentType paymentType, double amount){
-        try {
-            pizzaService.addPayment(table, paymentType, amount);
-        } catch (Exception e){
-            fail(e.getMessage());
-        }
+        verify(spyPayment, times(3)).getAmount();
+        verify(spyPayment, times(1)).setAmount(anyDouble());
     }
 }

@@ -15,8 +15,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
 
-public class MockitoTestPizzaService {
+class MockitoPizzaServiceTest {
 
     private PaymentRepository paymentRepository;
     private PizzaService pizzaService;
@@ -38,12 +39,15 @@ public class MockitoTestPizzaService {
 
         Mockito.when(paymentRepository.getAll()).thenReturn(List.of(payment1));
 
-        int initialSize = paymentRepository.getAll().size();
+        int initialSize = 1;
+
         try {
             pizzaService.addPayment(table, paymentType, amount);
         } catch (Exception e){
             fail(e.getMessage());
         }
+
+        Mockito.verify(paymentRepository, times(1)).add(any(Payment.class));
 
         Mockito.when(paymentRepository.getAll()).thenReturn(List.of(payment1, payment1));
 
@@ -58,6 +62,8 @@ public class MockitoTestPizzaService {
         tryAddPayment(2, paymentType, 4.0);
         tryAddPayment(1, paymentType, 2.0);
 
+        Mockito.verify(paymentRepository, times(3)).add(any(Payment.class));
+
         Payment payment1 = new Payment(1, paymentType, 5.0);
         Payment payment2 = new Payment(2, paymentType, 4.0);
         Payment payment3 = new Payment(1, paymentType, 2.0);
@@ -65,6 +71,8 @@ public class MockitoTestPizzaService {
         Mockito.when(paymentRepository.getAll()).thenReturn(List.of(payment1, payment2, payment3));
 
         assertEquals(11.0, pizzaService.getTotalAmountForType(PaymentType.Cash));
+
+        Mockito.verify(paymentRepository, times(1)).getAll();
     }
 
     private void tryAddPayment(int table, PaymentType paymentType, double amount){
