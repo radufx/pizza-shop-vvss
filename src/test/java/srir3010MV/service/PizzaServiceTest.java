@@ -21,14 +21,14 @@ public class PizzaServiceTest {
 
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         final MenuRepository menuRepository = new MenuRepository();
         paymentRepository = new PaymentRepository();
         pizzaService = new PizzaService(menuRepository, paymentRepository);
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
     }
 
     @Tag("add-payment")
@@ -38,7 +38,7 @@ public class PizzaServiceTest {
             "-2, 30.0",
             "7, -1.0"
     })
-    void addPaymentTC34(int table, double amount) {
+    public void addPaymentTC34(int table, double amount) {
         paymentType = PaymentType.Cash;
 
         assertThrows(Exception.class, () -> pizzaService.addPayment(table, paymentType, amount), "Expected to throw, but it didn't");
@@ -48,7 +48,7 @@ public class PizzaServiceTest {
     @DisplayName("add-payment-tc-5-7")
     @ParameterizedTest
     @ValueSource(ints = {1, 2})
-    void addPaymentTC57(int table) {
+    public void addPaymentTC57(int table) {
         paymentType = PaymentType.Cash;
         amount = 10.0;
 
@@ -61,7 +61,7 @@ public class PizzaServiceTest {
     @DisplayName("add-payment-tc-6-8")
     @ParameterizedTest
     @ValueSource(ints = {0, 9})
-    void addPaymentTC68(int table) {
+    public void addPaymentTC68(int table) {
         paymentType = PaymentType.Card;
         amount = 10.0;
 
@@ -71,7 +71,7 @@ public class PizzaServiceTest {
     @Test
     @Tag("add-payment")
     @DisplayName("add-payment-tc-1")
-    void addPaymentTC1() {
+    public void addPaymentTC1() {
         table = 2;
         paymentType = PaymentType.Cash;
         amount = 100.0;
@@ -84,7 +84,7 @@ public class PizzaServiceTest {
     @Test
     @Tag("add-payment")
     @DisplayName("add-payment-tc-4")
-    void addPaymentTC4() {
+    public void addPaymentTC4() {
         table = 7;
         paymentType = PaymentType.Cash;
         amount = -1.0;
