@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 
-class JunitPaymentRepositoryTest {
+public class JunitPaymentRepositoryTest {
 
     private PaymentRepository paymentRepository;
 

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29ee2396-605a-44fe-bce6-8802f954fad2" name="Changes" comment="modifying getTotalAmountForType method">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/payments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/payments.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTestWBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTestWBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPizzaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPizzaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPizzaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPizzaServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +83,7 @@
       <recent name="srir3010MV.unitTesting" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PaymentIntegrationTest">
+  <component name="RunManager" selected="JUnit.PizzaServiceTest">
     <configuration name="JunitPaymentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pizza-shop-vvss" />
       <extension name="coverage">
@@ -105,22 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MockitoPaymentTest.Amount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pizza-shop-vvss" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="srir3010MV.unitTesting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="srir3010MV.unitTesting" />
-      <option name="MAIN_CLASS_NAME" value="srir3010MV.unitTesting.MockitoPaymentTest" />
-      <option name="METHOD_NAME" value="Amount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PaymentIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="srir3010" />
       <extension name="coverage">
@@ -131,6 +124,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="srir3010MV.integrationTesting" />
       <option name="MAIN_CLASS_NAME" value="srir3010MV.integrationTesting.PaymentIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PizzaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="srir3010" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srir3010MV.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="srir3010MV.service" />
+      <option name="MAIN_CLASS_NAME" value="srir3010MV.service.PizzaServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,18 +187,18 @@
     <list>
       <item itemvalue="JUnit.JunitPaymentTest" />
       <item itemvalue="JUnit.MockitoPaymentTest" />
-      <item itemvalue="JUnit.MockitoPaymentTest.Amount" />
       <item itemvalue="JUnit.PaymentIntegrationTest" />
       <item itemvalue="JUnit.RepositoryIntegrationTest" />
+      <item itemvalue="JUnit.PizzaServiceTest" />
       <item itemvalue="Maven.srir3010 [exec:java]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PizzaServiceTest" />
         <item itemvalue="JUnit.PaymentIntegrationTest" />
         <item itemvalue="JUnit.RepositoryIntegrationTest" />
         <item itemvalue="JUnit.JunitPaymentTest" />
         <item itemvalue="JUnit.MockitoPaymentTest" />
-        <item itemvalue="JUnit.MockitoPaymentTest.Amount" />
       </list>
     </recent_temporary>
   </component>

@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.Mockito.*;
 
-class MockitoPaymentTest {
+public class MockitoPaymentTest {
 
     private Payment payment;
 

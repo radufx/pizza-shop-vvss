@@ -17,7 +17,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 
-class MockitoPizzaServiceTest {
+public class MockitoPizzaServiceTest {
 
     private PaymentRepository paymentRepository;
     private PizzaService pizzaService;

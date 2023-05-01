@@ -11,7 +11,7 @@ import srir3010MV.repository.PaymentRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PizzaServiceTestWBT {
+public class PizzaServiceTestWBT {
 
     private PaymentRepository paymentRepository;
     private PizzaService pizzaService;

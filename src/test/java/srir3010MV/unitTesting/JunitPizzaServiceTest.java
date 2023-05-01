@@ -13,7 +13,7 @@ import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.fail;
 
 
-class JunitPizzaServiceTest {
+public class JunitPizzaServiceTest {
 
     private PaymentRepository paymentRepository;
     private PizzaService pizzaService;

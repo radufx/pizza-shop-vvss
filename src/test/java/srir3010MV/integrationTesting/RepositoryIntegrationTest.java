@@ -19,7 +19,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 
-class RepositoryIntegrationTest {
+public class RepositoryIntegrationTest {
 
     private PaymentRepository paymentRepository;
     private PizzaService pizzaService;
