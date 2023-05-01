@@ -1,0 +1,41 @@
+
+Q
+java:S3740"/Provide the parametrized type for this generic.(èöâáøÿÿÿÿ8—™ïšò0
+L
+java:S3740"/Provide the parametrized type for this generic.(×è¸–8—™ïšò0
+L
+java:S3740"/Provide the parametrized type for this generic.(ñªò 8—™ïšò0
+Q
+java:S3740"/Provide the parametrized type for this generic.(ƒÀÒëüÿÿÿÿ8—™ïšò0
+u
+java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ÊØ8˜™ïšò0
+C
+java:S1604{"(Make this anonymous inner class a lambda(ÎÃßÓüÿÿÿÿ
+w
+java:S1104;"ZMake observableList a static final constant or non-public and provide accessors if needed.(Ù½©Æ8™™ïšò0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó•Â
+X	java:S125"<This block of commented-out lines of code should be removed.(˜ºßô8¸™ïšò0
+£
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È’Êøÿÿÿÿ8¹™ïšò0
+y
+java:S1450="WRemove the "menuData" field and declare it as a local variable in the relevant methods.(³£–øÿÿÿÿ8º™ïšò0
+S
+java:S26965"6Make the enclosing method "static" or remove this set.(ûĞ¸—8À™ïšò0
+K
+java:S22095"5Change this instance-reference to a static reference.(ûĞ¸—
+]	java:S125="<This block of commented-out lines of code should be removed.(³£–øÿÿÿÿ8Ã™ïšò0
+o
+java:S6204T"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8É™ïšò0
+G
+java:S1602[",Remove useless curly braces around statement(ÇË®ûùÿÿÿÿ
+o
+java:S6204c"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ñ™ïšò0
+U	java:S106f"9Replace this use of System.out or System.err by a logger.(ú•€Ë8Ù™ïšò0
+U	java:S106g"9Replace this use of System.out or System.err by a logger.(ÑºŠ‰8Ú™ïšò0
+U	java:S106h"9Replace this use of System.out or System.err by a logger.(¢ùù8Ú™ïšò0
+U	java:S106i"9Replace this use of System.out or System.err by a logger.(ú•€Ë8Ú™ïšò0
+X	java:S125j"<This block of commented-out lines of code should be removed.(ñç±8Ü™ïšò0
+O
+java:S1602ˆ",Remove useless curly braces around statement(¸¯¥–úÿÿÿÿ8ä™ïšò0
+P
+java:S1128"5Remove this unused import 'srir3010MV.gui.OrdersGUI'.(×±› úÿÿÿÿ
