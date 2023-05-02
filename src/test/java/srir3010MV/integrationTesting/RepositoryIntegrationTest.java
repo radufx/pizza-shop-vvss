@@ -25,19 +25,19 @@ public class RepositoryIntegrationTest {
     private PizzaService pizzaService;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         final MenuRepository menuRepository = new MenuRepository();
         paymentRepository = new PaymentRepository("data/payments-test.txt");
         pizzaService = new PizzaService(menuRepository, paymentRepository);
     }
 
     @AfterEach
-    void cleanEnvironment() {
+    public void cleanEnvironment() {
         paymentRepository.clearAll();
     }
 
     @Test
-    void addPayment() {
+    public void addPayment() {
         Payment payment = mock(Payment.class);
         Mockito.when(payment.getAmount()).thenReturn(100.0);
         Mockito.when(payment.getType()).thenReturn(PaymentType.Cash);
@@ -54,7 +54,7 @@ public class RepositoryIntegrationTest {
     }
 
     @Test
-    void getTotalAmount() {
+    public void getTotalAmount() {
         Payment payment1 = mock(Payment.class);
         Payment payment2 = mock(Payment.class);
         Payment payment3 = mock(Payment.class);

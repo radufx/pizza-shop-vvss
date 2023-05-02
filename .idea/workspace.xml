@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="29ee2396-605a-44fe-bce6-8802f954fad2" name="Changes" comment="modifying getTotalAmountForType method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTestWBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTestWBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPaymentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPizzaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/JunitPizzaServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPaymentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPizzaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/unitTesting/MockitoPizzaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/PaymentIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/PaymentIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/RepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/RepositoryIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
