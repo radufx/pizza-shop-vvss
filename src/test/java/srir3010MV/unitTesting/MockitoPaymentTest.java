@@ -22,12 +22,12 @@ public class MockitoPaymentTest {
 
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         payment = new Payment(5, PaymentType.Cash, 100.0);
     }
 
     @Test
-    void PaymentType() {
+    public void PaymentType() {
         Payment spyPayment = spy(payment);
 
         verify(spyPayment, times(0)).getType();
@@ -40,7 +40,7 @@ public class MockitoPaymentTest {
     }
 
     @Test
-    void Amount() {
+    public void Amount() {
         Payment spyPayment = spy(payment);
 
         verify(spyPayment, times(0)).getAmount();

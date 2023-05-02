@@ -21,18 +21,18 @@ public class JunitPaymentTest {
     private Payment payment;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         payment = new Payment(5, PaymentType.Cash, 100.0);
     }
     @Test
-    void PaymentType() {
+    public void PaymentType() {
         assertEquals(PaymentType.Cash, payment.getType());
         payment.setType(PaymentType.Card);
         assertEquals(PaymentType.Card, payment.getType());
     }
 
     @Test
-    void Amount() {
+    public void Amount() {
         assertEquals(100.0, payment.getAmount());
         payment.setAmount(75.0);
         assertEquals(75.0, payment.getAmount());

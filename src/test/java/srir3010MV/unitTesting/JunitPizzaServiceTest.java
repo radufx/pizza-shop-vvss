@@ -19,19 +19,19 @@ public class JunitPizzaServiceTest {
     private PizzaService pizzaService;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         final MenuRepository menuRepository = new MenuRepository();
         paymentRepository = new PaymentRepository("data/payments-test.txt");
         pizzaService = new PizzaService(menuRepository, paymentRepository);
     }
 
     @AfterEach
-    void cleanEnvironment() {
+    public void cleanEnvironment() {
         paymentRepository.clearAll();
     }
 
     @Test
-    void addPayment() {
+    public void addPayment() {
         int table = 2;
         PaymentType paymentType = PaymentType.Cash;
         double amount = 100.0;
@@ -49,7 +49,7 @@ public class JunitPizzaServiceTest {
     }
 
     @Test
-    void getTotalAmount() {
+    public void getTotalAmount() {
         PaymentType paymentType = PaymentType.Cash;
 
         tryAddPayment(1, paymentType, 5.0);

@@ -22,17 +22,17 @@ public class JunitPaymentRepositoryTest {
     private PaymentRepository paymentRepository;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         paymentRepository = new PaymentRepository("data/payments-test.txt");
     }
 
     @AfterEach
-    void cleanEnvironment() {
+    public void cleanEnvironment() {
         paymentRepository.clearAll();
     }
 
     @Test
-    void addPayment() {
+    public void addPayment() {
         Payment payment = new Payment(2, PaymentType.Cash, 100.0);
 
         assertEquals(0, paymentRepository.getAll().size());
@@ -41,7 +41,7 @@ public class JunitPaymentRepositoryTest {
     }
 
     @Test
-    void getAllPayment() {
+    public void getAllPayment() {
 
         Payment payment =  new Payment(2, PaymentType.Cash, 100.0);
 

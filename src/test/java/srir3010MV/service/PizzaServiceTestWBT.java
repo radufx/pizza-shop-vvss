@@ -22,28 +22,28 @@ public class PizzaServiceTestWBT {
 
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         final MenuRepository menuRepository = new MenuRepository();
         paymentRepository = new PaymentRepository("data/payments-test.txt");
         pizzaService = new PizzaService(menuRepository, paymentRepository);
     }
 
     @AfterEach
-    void tearDown() {
+    public void tearDown() {
         paymentRepository.clearAll();
     }
 
     @Test
     @Tag("get-total-amount")
     @DisplayName("get-total-amount-tc-2")
-    void getTotalAmountTC2() {
+    public void getTotalAmountTC2() {
         assertEquals(0, pizzaService.getTotalAmountForType(PaymentType.Cash));
     }
 
     @Test
     @Tag("get-total-amount")
     @DisplayName("get-total-amount-tc-3")
-    void getTotalAmountTC3() {
+    public void getTotalAmountTC3() {
         paymentType = PaymentType.Cash;
 
         tryAddPayment(1, paymentType, 5.0);
@@ -55,7 +55,7 @@ public class PizzaServiceTestWBT {
     @Test
     @Tag("get-total-amount")
     @DisplayName("get-total-amount-tc-5")
-    void getTotalAmountTC5() {
+    public void getTotalAmountTC5() {
         paymentType = PaymentType.Card;
 
         tryAddPayment(1, paymentType, 5.0);
@@ -67,7 +67,7 @@ public class PizzaServiceTestWBT {
     @Test
     @Tag("get-total-amount")
     @DisplayName("get-total-amount-tc-4")
-    void getTotalAmountTC4() {
+    public void getTotalAmountTC4() {
         paymentType = PaymentType.Cash;
 
         tryAddPayment(1, paymentType, -5.0);

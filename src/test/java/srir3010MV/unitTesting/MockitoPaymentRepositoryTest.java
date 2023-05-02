@@ -23,17 +23,17 @@ public class MockitoPaymentRepositoryTest {
     private PaymentRepository paymentRepository;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         paymentRepository = new PaymentRepository("data/payments-test.txt");
     }
 
     @AfterEach
-    void cleanEnvironment() {
+    public void cleanEnvironment() {
         paymentRepository.clearAll();
     }
 
     @Test
-    void addPayment() {
+    public void addPayment() {
         Payment payment = mock(Payment.class);
         Mockito.when(payment.toString()).thenReturn("2,Cash,100.0");
 
@@ -45,7 +45,7 @@ public class MockitoPaymentRepositoryTest {
     }
 
     @Test
-    void getAllPayment() {
+    public void getAllPayment() {
 
         Payment payment = mock(Payment.class);
         String paymentString = "2,Cash,100.0";
