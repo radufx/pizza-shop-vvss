@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="29ee2396-605a-44fe-bce6-8802f954fad2" name="Changes" comment="modifying getTotalAmountForType method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/PaymentIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/PaymentIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/RepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/integrationTesting/RepositoryIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/payments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/payments.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/srir3010MV/service/PizzaServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

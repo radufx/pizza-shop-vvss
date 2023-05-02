@@ -31,7 +31,7 @@ public class PizzaServiceTest {
     public void tearDown() {
     }
 
-    @Tag("add-payment")
+    @Tag("add-payment-tc-3-4")
     @DisplayName("add-payment-tc-3-4")
     @ParameterizedTest
     @CsvSource({
@@ -44,7 +44,7 @@ public class PizzaServiceTest {
         assertThrows(Exception.class, () -> pizzaService.addPayment(table, paymentType, amount), "Expected to throw, but it didn't");
     }
 
-    @Tag("add-payment")
+    @Tag("add-payment-tc-5-7")
     @DisplayName("add-payment-tc-5-7")
     @ParameterizedTest
     @ValueSource(ints = {1, 2})
@@ -57,7 +57,7 @@ public class PizzaServiceTest {
         assertEquals(initialSize + 1, paymentRepository.getAll().size());
     }
 
-    @Tag("add-payment")
+    @Tag("add-payment-6-8")
     @DisplayName("add-payment-tc-6-8")
     @ParameterizedTest
     @ValueSource(ints = {0, 9})
@@ -69,7 +69,7 @@ public class PizzaServiceTest {
     }
 
     @Test
-    @Tag("add-payment")
+    @Tag("add-payment-tc-3-4")
     @DisplayName("add-payment-tc-1")
     public void addPaymentTC1() {
         table = 2;
@@ -82,7 +82,7 @@ public class PizzaServiceTest {
     }
 
     @Test
-    @Tag("add-payment")
+    @Tag("add-payment-tc-3-4")
     @DisplayName("add-payment-tc-4")
     public void addPaymentTC4() {
         table = 7;
